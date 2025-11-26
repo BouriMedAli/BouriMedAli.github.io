@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès au document PDF - Systèmes de Recherche d'Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .pdf-link {
+            display: inline-block;
+            background-color: #007cba;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .pdf-link:hover {
+            background-color: #005a87;
+        }
+        .info {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Document de Cours</h1>
+        <h2>Les systèmes de recherche d'information : Modèles typiques</h2>
+        
+        <div class="info">
+            <p><strong>Master de Recherche en Informatique (MRI 2)</strong><br>
+            Année académique 2020/2021<br>
+            Heger KAMMOUN BOUZAINE</p>
+        </div>
+
+        <a href="Les-systèmes-de-recherche-dinformation-II.pdf" class="pdf-link">
+            📄 Télécharger le PDF du cours
+        </a>
+
+        <div class="info">
+            <p><strong>Contenu du document :</strong><br>
+            Modèles booléen, vectoriel, probabiliste, logique et leurs extensions</p>
+            <p><strong>Taille du fichier :</strong> 24MB+</p>
+        </div>
+
+        <p>Si le téléchargement ne démarre pas automatiquement, <br>cliquez droit sur le lien et choisissez "Enregistrer la cible sous..."</p>
+    </div>
+
+    <script>
+        // Optionnel: Ajouter un suivi des clics
+        document.querySelector('.pdf-link').addEventListener('click', function() {
+            console.log('PDF téléchargé - ' + new Date().toLocaleString());
+        });
+    </script>
+</body>
+</html>
